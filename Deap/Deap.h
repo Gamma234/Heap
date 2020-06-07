@@ -1,5 +1,5 @@
-#ifndef PRIORITY_QUEUE_H_INCLUDED
-#define PRIORITY_QUEUE_H_INCLUDED
+#ifndef DEAP_H_INCLUDED
+#define DEAP_H_INCLUDED
 
 # include <stdio.h>
 
@@ -335,5 +335,5 @@ void Deap<Type>::DataSwap( int index1, int index2 ) {
 
 } // Deap<Type>::DataSwap()
 
-#endif // PRIORITY_QUEUE_H_INCLUDED
+#endif // DEAP_H_INCLUDED
 
