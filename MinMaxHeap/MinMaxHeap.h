@@ -133,6 +133,10 @@ bool MinMaxHeap<Type>::GetMinAndDelete( Type& data ) {
 template<class Type>
 void MinMaxHeap<Type>::DeleteMin() {
 
+  if ( mHeapSize == 0 ) {
+    return ;
+  } // if
+
   mHeapSize-- ;
   mHeap[0] = mHeap[mHeapSize] ;
 
@@ -193,6 +197,10 @@ bool MinMaxHeap<Type>::GetMaxAndDelete( Type& data ) {
 
 template<class Type>
 void MinMaxHeap<Type>::DeleteMax() {
+
+  if ( mHeapSize == 0 ) {
+    return ;
+  } // if
 
   int maxIndex = 0 ;
 
