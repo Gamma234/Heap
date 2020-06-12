@@ -1,2 +1,2 @@
 # Heap
-PriorityQueue, Deap, MinMaxHeap
+PriorityQueue, Deap, MinMaxHeap, SymmetricMinMaxHeap
