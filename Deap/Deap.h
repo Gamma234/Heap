@@ -160,7 +160,9 @@ bool Deap<Type>::GetMinAndDelete( Type& data ) {
 template<class Type>
 void Deap<Type>::DeleteMin() {
   
-  mHeapSize-- ;  
+  if ( mHeapSize != 1 ) {
+    mHeapSize-- ;
+  } // if
 
   if ( mHeapSize != 1 ) {
     
@@ -210,7 +212,9 @@ bool Deap<Type>::GetMaxAndDelete( Type& data ) {
 template<class Type>
 void Deap<Type>::DeleteMax() {
 
-  mHeapSize-- ;
+  if ( mHeapSize != 1 ) {
+    mHeapSize-- ;
+  } // if
 
   if ( mHeapSize != 1 && mHeapSize != 2 ) {
 
