@@ -180,7 +180,9 @@ bool SymmetricMinMaxHeap<Type>::GetMinAndDelete( Type& data ) {
 template<class Type>
 void SymmetricMinMaxHeap<Type>::DeleteMin() {
 
-  mHeapSize-- ;
+  if ( mHeapSize != 1 ) {
+    mHeapSize-- ;
+  } // if
 
   if ( mHeapSize != 1 ) {
 
@@ -237,7 +239,9 @@ bool SymmetricMinMaxHeap<Type>::GetMaxAndDelete( Type& data ) {
 template<class Type>
 void SymmetricMinMaxHeap<Type>::DeleteMax() {
 
-  mHeapSize-- ;
+  if ( mHeapSize != 1 ) {
+    mHeapSize-- ;
+  } // if
 
   if ( mHeapSize != 1 && mHeapSize != 2 ) {
 
