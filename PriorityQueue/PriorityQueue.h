@@ -121,6 +121,10 @@ bool PriorityQueue<Type>::GetTopAndDelete( Type& data ) {
 template<class Type>
 void PriorityQueue<Type>::DeleteTop() {
   
+  if ( mHeapSize == 0 ) {
+    return ;
+  } // if
+
   mHeapSize-- ;
   mHeap[0] = mHeap[mHeapSize] ;
 
