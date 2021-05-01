@@ -1,2 +1,2 @@
 # Heap
-PriorityQueue, Deap, MinMaxHeap, SymmetricMinMaxHeap, LeftistHeap, BinomialHeap
+PriorityQueue, Deap, MinMaxHeap, SymmetricMinMaxHeap, LeftistHeap, BinomialHeap, FibonacciHeap
